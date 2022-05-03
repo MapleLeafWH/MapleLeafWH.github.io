@@ -1,0 +1,413 @@
+@font-face {
+    font-family:'fengmang';
+    src:url('../fonts/ziti.ttf'); /* 修改成你的字体 */
+    font-display:swap;
+}
+h1#site-title {
+    font-family:'fengmang', sans-serif;
+}
+span#subtitle {
+    font-family:arzhu!important
+}
+a#site-name {
+    font-family:arzhu!important
+}
+/*bb微调*/
+#bbTimeList {
+    transition: .3s;
+    margin-bottom: 5px;
+    /*margin-bottom: 1rem;*/
+    justify-content: space-between;
+}
+i:hover {
+    color: blueviolet;
+}
+#bbTimeList:hover {
+    outline: darkmagenta solid 3px;
+}
+#bbdiansha {
+    padding-top: 5px;
+}
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 20px;
+    padding-top: 2px;
+}
+
+/*侧边栏微调*/
+#aside-content .card-widget:hover,.recent-post-item:hover{
+    outline: darkmagenta solid 3px;
+}
+#footer {
+    background: rgba(255,255,255,.15);
+    color: #000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    backdrop-filter: saturate(100%) blur(5px)
+}
+
+#footer::before {
+    background: rgba(255,255,255,.15)
+}
+
+#footer #footer-wrap {
+    color: var(--font-color)
+}
+
+#footer #footer-wrap a {
+    color: var(--font-color)
+}
+/* webkit, opera, IE9 */
+::selection {
+    background: #3f3f3f;
+    color: #fff;
+}
+/* mozilla firefox */
+::-moz-selection {
+    background: #3f3f3f;
+    color: #fff;
+}
+[data-theme="dark"] ::-moz-selection {
+    background: #f0f0f0;
+    color: #000;
+}
+[data-theme="dark"] ::selection {
+    background: #f0f0f0;
+    color: #000;
+}
+
+/*滚动条*/
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(73, 177, 245, 0.2);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #49b1f5;
+    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #49b1f5;
+}
+
+
+#aside-content .card-tag-cloud a:hover {
+    color: #eee!important;
+    margin: 0 auto;
+    border-radius: 7px;
+    background: var(--btn-bg);
+}
+#aside-content #card-toc .toc-content .toc-link.active {
+    border-left-color: #82aaff;
+    background: var(--btn-bg);
+    border-radius: 7px;
+    box-shadow: 0 8px 12px -3px rgba(73,177,245,0.2);
+}
+/*底部按钮调整*/
+@media screen and (min-width:776px) {
+    #rightside button{
+        margin-right: 8px;
+    }
+    #rightside > div > button, #rightside > div > a{
+        margin-bottom: 5px;
+        width: 45px;
+        height: 45px;
+        border-radius: 22.5px;
+        font-size: 22px;
+    }
+    #rightside #rightside-config-hide{
+        transform: translate(55px, 0);
+    }
+}
+/*aplayer音乐*/
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px !important;
+    /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+    left: 0 !important;
+    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+}
+/*修改鼠标样式*/
+/* 全局默认鼠标指针 */
+body,
+html{
+    cursor: url('../shubiao/pointer.cur'),auto !important;
+}
+/* 悬停图片时的鼠标指针 */
+img{
+    cursor: url('../shubiao/alternate.cur'),auto !important;
+}
+/* 选择链接标签时的鼠标指针 */
+a:hover{
+    cursor: url('../shubiao/link.cur'),auto;
+}
+/* 选中输入框时的鼠标指针 */
+input:hover{
+    cursor: url('../shubiao/text.cur'),auto;
+}
+/* 悬停按钮时的鼠标指针 */
+button:hover{
+    cursor: url('../shubiao/pin.cur'),auto;
+}
+/* 悬停列表标签时的鼠标指针 */
+i:hover{
+    cursor: url('../shubiao/link.cur'),auto;
+}
+/* 悬停页脚链接标签（例如页脚徽标）时的鼠标指针 */
+#footer-wrap a:hover{
+    cursor: url('../shubiao/link.cur'),auto;
+}
+/* 悬停页码时的鼠标指针 */
+#pagination .page-number:hover{
+    cursor: url('../shubiao/person.cur'),auto;
+}
+/* 悬停菜单栏时的鼠标指针 */
+#nav .site-page:hover{
+    cursor: url('../shubiao/handwriting.cur'),auto;
+}
+/*评论气泡*/
+/* 自定义twikoo评论输入框高度 */
+.tk-input[data-v-619b4c52] .el-textarea__inner {
+    height: 130px !important;
+}
+/* 输入评论时自动隐藏输入框背景图片 */
+.tk-input[data-v-619b4c52] .el-textarea__inner:focus {
+    background-image: none !important;
+}
+/* 调整楼中楼样式 ，整体左移，贴合气泡化效果 */
+.tk-replies {
+    left: -70px;
+    width: calc(100% + 70px);
+}
+/* 头像宽度调整 rem单位与全局字体大小挂钩，需配合自己情况调整大小以保证头像显示完整*/
+.tk-replies .tk-avatar {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+}
+.tk-replies .tk-avatar img {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+}
+/* 回复框左移，避免窄屏时出框 */
+.tk-comments-container .tk-submit {
+    position: relative;
+    left: -70px;
+}
+/* 评论块气泡化修改 */
+.tk-content {
+    background: #00a6ff; /*默认模式访客气泡配色*/
+    padding: 10px;
+    color: #fff; /*默认模式访客气泡字体配色*/
+    border-radius: 10px;
+    font-size: 16px !important;
+    width: fit-content;
+    max-width: 100%;
+    position: relative !important;
+    overflow: visible !important;
+    max-height: none !important;
+}
+/* 修复图片出框 */
+.tk-content img {
+    max-width: 100% !important;
+}
+/* 修复过长文本出框 */
+.tk-content pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.tk-content a {
+    color: #eeecaa; /*默认模式超链接配色*/
+}
+.tk-content::before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 20px;
+    left: -13px;
+    border-top: 2px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 15px solid #00a6ff; /*默认模式访客气泡小三角配色*/
+    border-left: 0px solid transparent;
+}
+.tk-master .tk-content {
+    background: #ff8080; /*默认模式博主气泡配色*/
+    color: #fff; /*默认模式博主气泡字体配色*/
+    width: fit-content;
+    max-width: 100%;
+}
+.tk-master .tk-content a {
+    color: #eeecaa;
+}
+.tk-master .tk-content::before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 20px;
+    left: -13px;
+    border-top: 2px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 15px solid #ff8080; /*默认模式博主气泡小三角配色*/
+    border-left: 0px solid transparent;
+}
+.tk-row[data-v-d82ce9a0] {
+    max-width: 100%;
+    width: fit-content;
+}
+.tk-avatar {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* 夜间模式配色，具体比照上方默认模式class */
+[data-theme="dark"] .tk-content {
+    background: #000;
+    color: #fff;
+}
+[data-theme="dark"] .tk-content a {
+    color: #dfa036;
+}
+[data-theme="dark"] .tk-content::before {
+    border-right: 15px solid #000;
+}
+[data-theme="dark"] .tk-master .tk-content {
+    background: #000;
+    color: #fff;
+}
+[data-theme="dark"] .tk-master .tk-content a {
+    color: #dfa036;
+}
+[data-theme="dark"] .tk-master .tk-content::before {
+    border-top: 2px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 15px solid #000;
+    border-left: 0px solid transparent;
+}
+/* 自适应内容 */
+@media screen and (min-width: 1024px) {
+    /* 设置宽度上限，避免挤压博主头像 */
+    .tk-content {
+        max-width: 75%;
+        width: fit-content;
+    }
+    .tk-master .tk-content {
+        width: 75%;
+    }
+    .tk-master .tk-content::before {
+        left: 100%;
+        border-left: 15px solid #ff8080;
+        border-right: 0px solid transparent;
+    }
+    .tk-master .tk-avatar {
+        position: relative;
+        left: calc(75% + 70px);
+    }
+    .tk-master .tk-row[data-v-d82ce9a0] {
+        position: relative;
+        top: 0px;
+        left: calc(75% - 230px);
+    }
+    [data-theme="dark"] .tk-master .tk-content::before {
+        border-left: 15px solid #000;
+        border-right: 0px solid transparent;
+    }
+}
+/* 设备名称常态隐藏，悬停评论时显示 */
+.tk-extras {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+.tk-content:hover + .tk-extras {
+    -webkit-animation: tk-extras-fadeIn 0.5s linear;
+    -moz-animation: tk-extras-fadeIn 0.5s linear;
+    -o-animation: tk-extras-fadeIn 0.5s linear;
+    -ms-animation: tk-extras-fadeIn 0.5s linear;
+    animation: tk-extras-fadeIn 0.5s linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-moz-keyframes tk-extras-fadeIn {
+    from {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+    }
+    to {
+        opacity: 1;
+        -ms-filter: none;
+        filter: none;
+    }
+}
+@-webkit-keyframes tk-extras-fadeIn {
+    from {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+    }
+    to {
+        opacity: 1;
+        -ms-filter: none;
+        filter: none;
+    }
+}
+@-o-keyframes tk-extras-fadeIn {
+    from {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+    }
+    to {
+        opacity: 1;
+        -ms-filter: none;
+        filter: none;
+    }
+}
+@keyframes tk-extras-fadeIn {
+    from {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+    }
+    to {
+        opacity: 1;
+        -ms-filter: none;
+        filter: none;
+    }
+}
+/*#recent-posts>.recent-post-item,.layout_page>div:first-child:not(.recent-posts),.layout_post>#page,.layout_post>#post,.read-mode .layout_post>#post {*/
+/*    background: var(--light_bg_color)*/
+/*}*/
+
+/*#aside-content .card-widget {*/
+/*    background: var(--light_bg_color)*/
+/*}*/
+/* 文章页背景 */
+/*.layout>div:first-child:not(.recent-posts) {*/
+/*    !* 以下代表白色透明度为0.3 *!*/
+/*    background: rgba(255,255,255,1);*/
+/*}*/
+/* 所有背景（包括首页卡片、文章页、页面页等） */
+/*#recent-posts>.recent-post-item,.layout>div:first-child:not(.recent-posts),.layout_post>#page,.layout_post>#post,.read-mode .layout_post>#post{*/
+/*    !* 以下代表白色透明度为0.3 *!*/
+/*    background: rgba(255,255,255,0.8);*/
+/*}*/
